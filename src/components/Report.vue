@@ -13,7 +13,7 @@
           <li v-for="topic in topics" :key="topic.en" class="report-topic"><b>{{topic.topic.th}}</b>
             <ul class="fix-list">
               <li v-for="item in topic.sub_topic" :key="item.th">
-                <router-link :to="`/${topic.topic.en}/${item.en}`" tag="a" class="report-list">{{item.th}}</router-link>
+                <router-link :to="`/graph/${item.en}`" tag="a" class="report-list">{{item.th}}</router-link>
               </li>
             </ul>
           </li>

@@ -4,6 +4,11 @@ import VueRouter from 'vue-router'
 import App from './App.vue'
 import { routes } from './routes'
 
+import AmCharts from 'amcharts3'
+import AmSerial from 'amcharts3/amcharts/serial'
+import 'materialize-css/dist/css/materialize.min.css'
+import 'materialize-css/dist/js/materialize.min.js'
+
 Vue.use(VueRouter)
 
 const router = new VueRouter({
