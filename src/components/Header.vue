@@ -1,4 +1,5 @@
 <template>
+<header>
   <nav class="light-blue accent-4">
     <div class="container">
       <div class="nav-wrapper">
@@ -12,6 +13,7 @@
       </div>
     </div>
   </nav>
+  </header>
 </template>
 
 <script>

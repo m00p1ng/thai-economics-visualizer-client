@@ -5,7 +5,7 @@
         <div class="card-content">
           <span class="card-title center"><h3>Login</h3></span>
           <div class="row">
-            <form class="col s12 m8 offset-m2">
+            <form class="col s10 m8 offset-m2 offset-s1">
               <div class="row">
                 <div class="input-field">
                   <input id="userth" type="text" class="validate">

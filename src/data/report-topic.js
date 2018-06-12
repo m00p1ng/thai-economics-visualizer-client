@@ -3,7 +3,7 @@ export default [
     topic: { th: "อุปทาน", en: "supply" },
     sub_topic: [
       { th: "รายได้เกษตรกร", en: "farm-income" },
-      { th: "ดัชนีผลผลิตภาคอุตสาหกรรม", en: "mpi" },
+      { th: "ดัชนีผลผลิตภาคอุตสาหกรรม", en: "manufacturing-production-index" },
       { th: "เครื่องชี้ประกอบของภาคอุตสาหกรรม", en: "other-manufacturing-indicators" },
       { th: "อัตราการใช้กำลังการผลิตที่ขจัดฤดูกาล", en: "capacity-utilization" },
       { th: "เครื่องชี้ภาคบริการ", en: "service-serctor-indicators" },
@@ -54,6 +54,4 @@ export default [
       { th: "เสถียรภาพด้านต่างประเทศของไทย", en: "external-stability-indicator" },
     ]
   },
-
-
 ]

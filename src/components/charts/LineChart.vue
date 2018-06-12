@@ -4,12 +4,6 @@
 
 <script>
 export default {
-  name: 'app',
-  data() {
-    return {
-      msg: 'Welcome to Your Vue.js + amCharts App'
-    }
-  },
    mounted () {
     var chartData = generateChartData();
 
@@ -87,7 +81,6 @@ var chart = AmCharts.makeChart("chartdiv", {
         "parseDates": true,
         "axisColor": "#DADADA",
         "minorGridEnabled": true,
-        "position": "top"
     },
     "export": {
     	"enabled": true,

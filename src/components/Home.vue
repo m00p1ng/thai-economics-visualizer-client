@@ -1,3 +1,12 @@
 <template>
-  <h1>HomePage</h1>
+  <div class="cover">
+    <img class="responsive-img" src="../assets/report-cover.png">
+  </div>
 </template>
+
+<style>
+.cover {
+  margin-top: 1em;
+}
+</style>
+

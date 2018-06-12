@@ -1,9 +1,9 @@
 <template>
-  <div>
+  <div class="page-wrapper">
     <app-header></app-header>
-    <div class="container">
+    <main class="container">
       <router-view></router-view>
-    </div>
+    </main>
     <app-footer></app-footer>
   </div>
 </template>
@@ -21,7 +21,7 @@ export default {
 </script>
 
 <style>
-  body {
+  .page-wrapper {
     display: flex;
     min-height: 100vh;
     flex-direction: column;

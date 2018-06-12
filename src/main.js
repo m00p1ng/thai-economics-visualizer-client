@@ -6,6 +6,7 @@ import { routes } from './routes'
 
 import AmCharts from 'amcharts3'
 import AmSerial from 'amcharts3/amcharts/serial'
+import AmPie from 'amcharts3/amcharts/pie'
 import 'materialize-css/dist/css/materialize.min.css'
 import 'materialize-css/dist/js/materialize.min.js'
 
