@@ -9,6 +9,15 @@ export default {
     "hideCredits":true,
   "type": "pie",
   "theme": "light",
+   "titles": [{
+        "text": "My Chart Title"
+    }, {
+        "text": "My Chart Sub-Title",
+        "bold": false
+    }],
+       "legend": {
+         position: "right"
+    },
   "dataProvider": [ {
     "country": "Lithuania",
     "litres": 501.9

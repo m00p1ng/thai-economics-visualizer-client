@@ -22,7 +22,13 @@ export default {
   var chart = AmCharts.makeChart("stackedbar", {
     "path": "/dist/amcharts",
     "type": "serial",
-	"theme": "light",
+    "theme": "light",
+     "titles": [{
+        "text": "My Chart Title"
+    }, {
+        "text": "My Chart Sub-Title",
+        "bold": false
+    }],
     "legend": {
 		"useGraphSettings": true,
     },

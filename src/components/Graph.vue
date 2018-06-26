@@ -7,9 +7,11 @@
     </div>
     <div class="card">
       <div class="card-content">
-        <line-chart></line-chart>
+        <line-chart :dataset="data_set"></line-chart>
+        <!-- <div class="divider" style="margin: 4em 0;"></div>
         <pie-chart></pie-chart>
-        <stack-bar-chart></stack-bar-chart>
+        <div class="divider" style="margin: 4em 0;"></div>
+        <stack-bar-chart></stack-bar-chart> -->
       </div>
     </div>
   </div>
@@ -20,12 +22,23 @@ import ReportTopics from '../data/report-topic.js'
 import LineChart from './charts/LineChart'
 import PieChart from './charts/PieChart'
 import StackBarChart from './charts/StackBarChart'
+import axios from 'axios'
 
 export default {
   components: {
     LineChart,
     PieChart,
     StackBarChart,
+  },
+  data() {
+    return {
+      data_set: null
+    }
+  },
+  beforeMount() {
+    axios.get(`http://localhost:3000/${this.$route.params.gname}`).then(res => {
+      this.data_set = res.data
+    })  
   },
   methods: {
     getThaiName(en_name) {

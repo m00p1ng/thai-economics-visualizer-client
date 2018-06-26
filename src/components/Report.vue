@@ -8,16 +8,16 @@
     <div class="card">
       <div class="card-content">
         <span class="card-title">รายงานเศรษฐกิจและการเงิน</span>
-        <p>ประกอบไปด้วย 5 สาขาดังต่อไปนี้</p>
-        <ol>
-          <li v-for="topic in topics" :key="topic.en" class="report-topic"><b>{{topic.topic.th}}</b>
-            <ul class="fix-list">
+        <!-- <p>ประกอบไปด้วย 5 สาขาดังต่อไปนี้</p> -->
+        <!-- <ol> -->
+          <div v-for="topic in topics" :key="topic.en">
+            <ul>
               <li v-for="item in topic.sub_topic" :key="item.th">
                 <router-link :to="`/graph/${item.en}`" tag="a" class="report-list">{{item.th}}</router-link>
               </li>
             </ul>
-          </li>
-        </ol>
+          </div>
+        <!-- </ol> -->
       </div>
     </div>
   </div>
